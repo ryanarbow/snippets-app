@@ -39,3 +39,9 @@ DEBUG:root:Constructing the subparsers
 INFO:root:Constructing parser
 DEBUG:root:Constructing the subparsers
 ERROR:root:FIXME: Unimplemented - get('test')
+INFO:root:Constructing parser
+DEBUG:root:Constructing the subparsers
+ERROR:root:FIXME: Unimplemented - put('test1', 'Another test')
+INFO:root:Constructing parser
+DEBUG:root:Constructing the subparsers
+ERROR:root:FIXME: Unimplemented - get('test1')
