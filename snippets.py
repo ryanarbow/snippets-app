@@ -33,6 +33,9 @@ def get(name):
     if not row:
         return "404: Snippet Not Found"
     return row[0]
+
+#def catalog():
+    
     
 def main():
     """Main function"""
@@ -49,7 +52,7 @@ def main():
     
     get_parser = subparsers.add_parser("get", help="Retrieve a snippet")
     get_parser.add_argument("name", help="Name of the snippet")
-    
+
     arguments = parser.parse_args()
     #Convert parsed arguments from Namespace to dictionary
     
@@ -62,7 +65,6 @@ def main():
     elif command == "get":
         snippet = get(**arguments)
         print("Retrieved snippet: {!r}".format(snippet))
-
 
 if __name__== "__main__":
     main()
